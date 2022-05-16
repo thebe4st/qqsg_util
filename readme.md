@@ -15,8 +15,13 @@ QQ三国卡键、自动回复
 
 ```
 cd $project-base-dir
-pip install -r requirement.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+```
 
+```
+pip install -r requirement.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+```
+
+```
 python main.py
 ```
 
@@ -26,8 +31,12 @@ python main.py
 ```
 pip install pyinstaller -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
+
 ```
 cd $project-base-dir
+```
+
+```
 pyinstaller main.py
 ```
 
