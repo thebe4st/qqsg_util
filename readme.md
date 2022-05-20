@@ -37,7 +37,7 @@ cd $project-base-dir
 ```
 
 ```
-pyinstaller main.py
+pyinstaller -F main.py
 ```
 
 结构与实现
