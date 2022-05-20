@@ -14,12 +14,16 @@ BIG_VALUE = 9999999
 def get_blood(pid):
     for offsets in const.blood_offsets:
         t = module.win32.get_value_by_point(pid, offsets)
-        return t
+        if t >= 0 and t < 1000000:
+            return t
+    return BIG_VALUE
 
 def get_magic(pid):
     for offsets in const.magic_offsets:
         t = module.win32.get_value_by_point(pid, offsets)
-        return t
+        if t >= 0 and t < 1000000:
+            return t
+    return BIG_VALUE
 
 
 
